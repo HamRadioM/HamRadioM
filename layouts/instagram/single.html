@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  <div class="ig-grid">
+  {{ range .Site.Data.instagram.posts }}
+    <div class="ig-item">
+      <a href="{{ .url }}" target="_blank" rel="noopener">
+        <img src="{{ .image }}" alt="{{ .caption }}" />
+      </a>
+      <div class="caption">{{ .caption }}</div>
+    </div>
+  {{ end }}
+  </div>
+  
+</article>
+{{ end }}

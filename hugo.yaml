@@ -1,0 +1,136 @@
+baseURL: "https://wenm.github.io/"
+title: Ming Wen
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  title: ExampleSite
+  description: "ExampleSite description"
+  keywords: [Blog, Portfolio, PaperMod]
+  # author: Me 
+  # author: ["Me", "You"] # multiple authors
+  DateFormat: "January 2, 2006"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  # ShowReadingTime: true
+  # ShowShareButtons: true
+  # ShowPostNavLinks: true
+  # ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  # ShowWordCount: true
+  # ShowRssButtonInSectionTermList: true
+  # UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  customCSS: 
+    - "css/instagram.css"
+    - "css/custom.css"
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Ming Wen"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Ming Wen
+    subtitle: |
+      I am a PhD candidate at the University of Michigan, 
+      
+      working in computational physics and chemistry.
+
+      My research focuses on developing theoretical methods for electron correlation. 
+      
+      I am also interested in applying machine learning to electronic-structure problems.
+
+    imageURL: "/images/ig/head_shot.jpg"
+    imageWidth: 256
+    imageHeight: 256
+    imageTitle: my profile
+    buttons:
+      # - name: Posts
+      #   url: posts
+      # - name: Tags
+      #   url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there! "
+    Content: I am a PhD candidate in chemistry at the University of Michigan. 
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ming-wen-408a96173/"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=t7HA5-sAAAAJ&hl=en"
+    - name: github
+      url: "https://github.com/ham-radio-72"
+    - name: github
+      url: "https://github.com/HamRadioM"
+    - name: instagram
+      url: "https://instagram.com/wming72"
+
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+menu:
+  main:
+    - identifier: Resume
+      name: Résumé
+      url: resume/
+      weight: 10
+    - identifier: Research
+      name: Research
+      url: research/
+      weight: 20
+    - identifier: Photography
+      name: Photography
+      url: photography/
+      weight: 30
+    - identifier: Contact
+      name: Contact
+      url: contact/
+      weight: 40
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai

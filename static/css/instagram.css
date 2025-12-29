@@ -1,0 +1,28 @@
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr));
+  gap: 12px;
+}
+
+.ig-grid img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */
+  transition: transform 0.2s ease;
+}
+
+.ig-grid img:hover {
+  transform: scale(1.01);
+}
+
+.ig-grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.ig-grid .caption {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #898989;
+  margin-top: 4px;
+}
